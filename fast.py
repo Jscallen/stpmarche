@@ -25,10 +25,10 @@ lemmatizer = WordNetLemmatizer()
 app = FastAPI()
 
 # Charger les modèles pré-entraînés (pickle)
-with open("vectorizer.pkl", "rb") as f:
+with open("vecto_model.pkl", "rb") as f:
     vectorizer = joblib.load(f)
 
-with open("umap_reducer.pkl", "rb") as f:
+with open("umap_model.pkl", "rb") as f:
     reducer = joblib.load(f)
 
 with open("kmeans_model.pkl", "rb") as f:
